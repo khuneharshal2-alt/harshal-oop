@@ -1,0 +1,39 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class employee
+{
+public:
+    string name;
+    int empID;
+    string department;
+
+    void display()
+    {
+        cout << "Employee name: " << name << endl;
+        cout << "Employee ID: " << empID << endl;
+        cout << "Department name: " << department << endl;
+        cout << "-------------------" << endl;
+    }
+};
+
+int main()
+{
+    employee E1;
+    employee E2;
+
+    E1.name = "Krishna Dekre";
+    E1.empID = 3232;
+    E1.department = "Cyber Department";
+
+    E1.display();
+
+    E2.name = "Nikhil Patil";
+    E2.empID = 4242;
+    E2.department = "Tech Team";
+
+    E2.display();
+
+    return 0;
+}
