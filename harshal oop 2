@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+class student
+{
+    public:
+    string name;
+    int roll_no;
+    string branch;
+    int age;
+
+    void display()
+  {
+      cout << "Enter student name: ";
+     cin >> name;
+
+        cout << "Enter roll number: ";
+        cin >> roll_no;
+
+        cout << "Enter branch: ";
+        cin >> branch;
+
+       cout << "Enter age: ";
+      
+        cin >> age;
+    }
+
+    void input()
+    {
+       cout << "Student name: " << name << endl;
+      cout << "Roll number: " << roll_no << endl;
+      cout << "Branch: " << branch << endl;
+      cout << "Age: " << age << endl;
+    }
+};
+
+int main()
+{
+   student s1;
+
+ s1.display();
+ s1.input();
+
+return 0;
+}
