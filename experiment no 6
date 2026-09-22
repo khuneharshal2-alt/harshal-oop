@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+
+class employee
+{
+    public:
+          int id;
+          int salary;
+          string depermant;
+
+          employee(int i,int s,string d)
+{
+    id=i;
+    salary=s;
+    depermant=d;
+
+
+}
+   ~employee()
+   {
+    cout<<"distractor active";
+   }
+void display()
+{   
+    cout<<"id of the employee is :"<<id<<endl;
+    cout<<"salary of the employee is:"<<salary<<endl;
+    cout<<"depermant of the employee is: "<<depermant<<endl;
+    
+}
+};
+int main()
+{
+        employee E1(12,100,"teach");
+        E1.display();
+
+        employee E2(49,999," web developer");
+        E2.display();
+
+        return 0;
+
+}
