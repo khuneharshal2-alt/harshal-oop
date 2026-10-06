@@ -1,0 +1,59 @@
+#include<iostream>
+using namespace std;
+
+class person
+{
+    public:
+          int hand;
+          int leg;
+
+
+          void display()
+          {
+            cout<<"no of hands is:"<<hand<<endl;
+            cout<<"no of legs is:"<<leg<<endl;
+          }
+
+};
+
+class employee:public person
+{
+    public:
+         int eye;
+         int finger;
+
+         void show()
+         {
+            cout<<"no of eye is :"<<eye<<endl;
+            cout<<"no of finger is:"<<finger<<endl;
+         }
+};
+
+class manager:public employee
+{
+    public:
+         string name;
+
+         void get()
+         {
+            cout<<"name of the maneger is:"<<name<<endl;
+         }
+
+};
+
+int main()
+{
+    manager M1;
+
+    M1.hand=2;
+    M1.leg=2;
+    M1.eye=2;
+    M1.finger=5;
+    M1.name="harsh";
+
+    M1.display();
+    M1.show();
+    M1.get();
+
+    return 0;
+}
